@@ -1,6 +1,6 @@
 {
   "name": "react-native-exceptions-manager",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React-Native JS Crash Reporter(Do not trigger native crash).",
   "repository": {
     "type": "git",
