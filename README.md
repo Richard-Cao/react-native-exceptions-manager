@@ -8,24 +8,27 @@
 React-Native JS Crash Reporter In Release Version(**Do not trigger native crash**).
 
 # Requirement
+
 >* **react-native** version >= 0.33
 
 # Linking
+
 ## Android
-* Add following lines into ```android/settings.gradle```
+
+- Add following lines into ```android/settings.gradle```
 
 ```
 include ':react-native-exceptions-manager'
 project(':react-native-exceptions-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exceptions-manager/android')
 ```
 
-* Add following lines into your ```android/app/build.gradle``` in section ```dependencies```
+- Add following lines into your ```android/app/build.gradle``` in section ```dependencies```
 
 ```
 compile project(':react-native-exceptions-manager')
 ```
 
-* Add following lines into ```MainApplication.java```
+- Add following lines into ```MainApplication.java```
 
 ```
 import com.richardcao.exceptionsmanager.react.ExceptionsManager;
@@ -44,7 +47,7 @@ protected List<ReactPackage> getPackages() {
 }
 ```
 
-* Create a class named ```ReactNativeJSCrashReceiver``` in it. This is needed to get js crash message from `react-native-exceptions-manager`.
+- Create a class named ```ReactNativeJSCrashReceiver``` in it. This is needed to get js crash message from `react-native-exceptions-manager`.
 
 ```
 public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
@@ -58,7 +61,7 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
 }
 ```
 
-* Add ```ReactNativeJSCrashReceiver``` declare in your ```AndroidManifest.xml```
+- Add ```ReactNativeJSCrashReceiver``` declare in your ```AndroidManifest.xml```
 
 ```
 <application
@@ -74,9 +77,15 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
 </application>
 ```
 
-## iOS *//TODO*
+## iOS 
 
-## MIT Licensed
+*//TODO*
+
+## Who Use It
+- [reading: iReading App Write In React-Native][reading-url]
+
+
+### MIT Licensed
 
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
@@ -86,3 +95,4 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
 [david-image]: http://img.shields.io/david/Richard-Cao/react-native-wechat.svg?style=flat-square
 [david-url]: https://david-dm.org/Richard-Cao/react-native-wechat
 [downloads-image]: http://img.shields.io/npm/dm/react-native-exceptions-manager.svg?style=flat-square
+[reading-url]: https://github.com/attentiveness/reading
