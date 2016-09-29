@@ -1,0 +1,30 @@
+{
+  "name": "react-native-exceptions-manager",
+  "version": "0.1.3",
+  "description": "React-Native JS Crash Reporter(Do not trigger native crash).",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Richard-Cao/react-native-exceptions-manager.git"
+  },
+  "keywords": [
+    "crash",
+    "react",
+    "react-native",
+    "exception"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.33"
+  },
+  "author": "Richard Cao <caolicheng921104@gmail.com>",
+  "contributors": [
+    {
+      "name": "Richard Cao",
+      "email": "caolicheng921104@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Richard-Cao/react-native-exceptions-manager/issues"
+  },
+  "homepage": "https://github.com/Richard-Cao/react-native-exceptions-manager#readme"
+}
