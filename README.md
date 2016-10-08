@@ -92,7 +92,7 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
 [license-url]: https://raw.githubusercontent.com/Richard-Cao/react-native-exceptions-manager/master/LICENSE
 [npm-image]: https://img.shields.io/npm/v/react-native-exceptions-manager.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/react-native-exceptions-manager
-[david-image]: http://img.shields.io/david/Richard-Cao/react-native-wechat.svg?style=flat-square
-[david-url]: https://david-dm.org/Richard-Cao/react-native-wechat
+[david-image]: http://img.shields.io/david/Richard-Cao/react-native-exceptions-manager.svg?style=flat-square
+[david-url]: https://david-dm.org/Richard-Cao/react-native-exceptions-manager
 [downloads-image]: http://img.shields.io/npm/dm/react-native-exceptions-manager.svg?style=flat-square
 [reading-url]: https://github.com/attentiveness/reading
