@@ -2,9 +2,9 @@ package com.richardcao.exceptionsmanager.react;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
 import com.facebook.common.logging.FLog;
+import com.facebook.react.bridge.NativeModuleCallExceptionHandler;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
