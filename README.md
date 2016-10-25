@@ -5,7 +5,7 @@
 [![Dependency Status][david-image]][david-url]
 [![Downloads][downloads-image]][npm-url]
 
-React-Native JS Crash Reporter In Release Version(**Do not trigger native crash**).
+React-Native Crash Reporter In Release Version(**Do not trigger native crash**).
 
 # Requirement
 
@@ -54,8 +54,10 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("com.richardcao.android.REACT_NATIVE_CRASH_REPORT_ACTION")) {
-            Throwable throwable = (Throwable) intent.getSerializableExtra("JavascriptException");
+            Throwable js = (Throwable) intent.getSerializableExtra("JavascriptException");
             ...(handler or report js crash operate)
+            Throwable e = (Throwable) intent.getSerializableExtra("Exception");
+            ...(handler or report native crash operate)
         }
     }
 }

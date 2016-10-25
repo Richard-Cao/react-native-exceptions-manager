@@ -29,6 +29,16 @@ public class ExceptionsManagerModule extends ReactContextBaseJavaModule {
     public ExceptionsManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.context = reactContext;
+
+        reactContext.setNativeModuleCallExceptionHandler(new NativeModuleCallExceptionHandler() {
+            @Override
+            public void handleException(Exception e) {
+                Intent intent = new Intent();
+                intent.setAction("com.richardcao.android.REACT_NATIVE_CRASH_REPORT_ACTION");
+                intent.putExtra("Exception", e);
+                context.sendBroadcast(intent);
+            }
+        });
     }
 
     @Override
