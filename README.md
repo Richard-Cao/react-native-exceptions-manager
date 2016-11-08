@@ -7,10 +7,6 @@
 
 React-Native Crash Reporter In Release Version(**Do not trigger native crash**).
 
-# Requirement
-
->* **react-native** version >= 0.33
-
 # Linking
 
 ## Android
@@ -19,7 +15,7 @@ React-Native Crash Reporter In Release Version(**Do not trigger native crash**).
 
 ```
 include ':react-native-exceptions-manager'
-project(':react-native-exceptions-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exceptions-manager/android')
+project(':react-native-exceptions-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exceptions-manager/android/app')
 ```
 
 - Add following lines into your ```android/app/build.gradle``` in section ```dependencies```
@@ -79,7 +75,7 @@ public class ReactNativeJSCrashReceiver extends BroadcastReceiver {
 </application>
 ```
 
-## iOS 
+## iOS
 
 *//TODO*
 

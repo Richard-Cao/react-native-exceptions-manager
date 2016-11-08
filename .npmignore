@@ -56,3 +56,6 @@ local.properties
 android/.idea/
 android/gradle
 android/gradlew*
+android/app/local.properties
+android/app/build
+android/app/captures
