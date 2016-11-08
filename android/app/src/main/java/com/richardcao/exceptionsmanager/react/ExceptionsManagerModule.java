@@ -11,7 +11,6 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableType;
-import com.facebook.react.common.JavascriptException;
 import com.facebook.react.common.ReactConstants;
 
 import java.util.regex.Matcher;
@@ -97,7 +96,7 @@ public class ExceptionsManagerModule extends ReactContextBaseJavaModule {
     private void showOrThrowError(String title, ReadableArray details, int exceptionId) {
         Intent intent = new Intent();
         intent.setAction("com.richardcao.android.REACT_NATIVE_CRASH_REPORT_ACTION");
-        intent.putExtra("JavascriptException", new JavascriptException(stackTraceToString(title, details)));
+        intent.putExtra("JavascriptException", new RuntimeException(stackTraceToString(title, details)));
         context.sendBroadcast(intent);
     }
 
